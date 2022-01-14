@@ -3,10 +3,6 @@ import React from "react";
 function HeaderNavs({ currentPage, handlePageChange }) {
   const links = [
     {
-      href: "#home",
-      pageChange: "Home",
-    },
-    {
       href: "#about",
       pageChange: "About",
     },
@@ -18,17 +14,19 @@ function HeaderNavs({ currentPage, handlePageChange }) {
       href: "#contact",
       pageChange: "Contact",
     },
+    {
+      href: "#resume",
+      pageChange: "Resume",
+    },
   ];
   return (
     <ul className="header">
-      {links.map((element) => {
+      {links.map((element, i) => {
         return (
-          <li className="nav-item">
+          <li className="nav-item" key={i}>
             <a
               href={element.href}
               onClick={() => handlePageChange(element.pageChange)}
-              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
               className={
                 currentPage === element.pageChange
                   ? "nav-link active"

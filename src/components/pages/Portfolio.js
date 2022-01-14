@@ -48,14 +48,21 @@ export default function Portfolio() {
   return (
     <div>
       <h1>My Work</h1>
-      <section class="projectCards">
-        {works.map((work) => {
+      <section className="projectCards">
+        {works.map((work, i) => {
+          console.log(work.src);
           return (
-            <a href={work.href} target="_blank" class="card" rel="noreferrer">
-              <img class="image" src={work.src} alt={work.alt} />
+            <a
+              key={i}
+              href={work.href}
+              target="_blank"
+              className="card"
+              rel="noreferrer"
+            >
+              <img className="image" src={work.src} alt={work.alt} />
 
-              <div class="overlay">
-                <div class="hoverText">{work.hoverText}</div>
+              <div className="overlay">
+                <div className="hoverText">{work.hoverText}</div>
               </div>
               <figcaption>{work.title}</figcaption>
             </a>

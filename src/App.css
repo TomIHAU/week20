@@ -4,7 +4,16 @@
   --contrastHover: #c07116;
   --borderColor: #030508;
 }
-
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.mainBody {
+  min-height: 93%;
+}
 * {
   font-family: Montserrat, sans-serif;
   cursor: default;
@@ -64,10 +73,7 @@ p {
 
 .projectCards {
   flex: 1 1;
-  /* display: block; */
-  top: 23%;
-  left: 8%;
-  position: absolute;
+  position: relative;
   padding: 0 50px;
   display: flex;
   flex-wrap: wrap;
@@ -115,8 +121,9 @@ img {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 385px;
-  min-height: 200px;
+  width: 350px;
+  min-height: 250px;
+  margin: 10px;
 }
 
 .card:hover figcaption {
@@ -203,10 +210,8 @@ header p {
 
 footer {
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 10px;
-  height: 35px;
 }
 
 .footerContainer {

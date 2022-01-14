@@ -19,9 +19,9 @@ function Footer() {
   return (
     <footer>
       <div className="footerContainer">
-        {socials.map((element) => {
+        {socials.map((element, i) => {
           return (
-            <a href={element.href} target="_blank" rel="noreferrer">
+            <a href={element.href} target="_blank" rel="noreferrer" key={i}>
               {element.img}
             </a>
           );
