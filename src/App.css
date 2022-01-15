@@ -221,3 +221,40 @@ footer {
   justify-content: space-around;
   font-size: 25px;
 }
+#contactForm {
+  width: 550px;
+  background-color: #e0e0e0;
+  color: #030508;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+#contactForm * {
+  margin: 3px 0;
+}
+#contactForm input,
+#contactForm textarea {
+  padding: 5px;
+}
+
+#contactForm button {
+  background-color: #1d9663;
+  color: #e0e0e0;
+  border: none;
+  border: 1px solid #1d9663;
+  border-radius: 4px;
+  width: 300px;
+  margin: 8px auto 0;
+}
+#contactForm button:hover {
+  background-color: #fff;
+  color: #136140;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+#messageInput {
+  height: 180px;
+  resize: none;
+}
