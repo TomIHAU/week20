@@ -70,7 +70,12 @@ h2 {
 p {
   line-height: 2;
 }
-
+#myRealPort {
+  color: #fce29b;
+}
+#myRealPort:hover {
+  color: white;
+}
 .projectCards {
   flex: 1 1;
   position: relative;
@@ -133,9 +138,12 @@ img {
 .card:hover .overlay {
   opacity: 0;
 }
-.hoverText {
+.resumeLink {
+  color: #1d9663;
 }
-
+.resumeLink:hover {
+  color: #c07116;
+}
 .text {
   position: absolute;
   top: 30%;
